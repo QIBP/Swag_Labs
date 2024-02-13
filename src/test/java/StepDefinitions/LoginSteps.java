@@ -34,7 +34,7 @@ public class LoginSteps {
     @Then("user navigated to the home page")
     public void user_navigated_to_the_home_page() {
         driver.findElement(By.xpath("//div[text()='Products']")).isDisplayed();
-        driver.quit();
+
     }
 
     @Given("Prakash is on login page")
@@ -51,6 +51,11 @@ public class LoginSteps {
         driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
     }
 
+    @And("Backpack item is available under product section in home page")
+    public void backpackItemIsAvailableUnderProductSectionInHomePage() {
+        driver.findElement(By.xpath("//div[text()='Sauce Labs Backpack']")).isDisplayed();
+        driver.quit();
+    }
 }
 
 
