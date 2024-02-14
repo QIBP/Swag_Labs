@@ -11,6 +11,6 @@ import org.junit.runner.RunWith;
         plugin = {"pretty", "html:target/HTMLReports/Results.html",
                 "json:target/HTMLReports/Results.json",
                 "junit:target/HTMLReports/Results.xml"},
-        tags = "@Re-Testing")
+        tags = "@POM")
 public class TestRunner {
 }
